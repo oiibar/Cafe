@@ -8,7 +8,7 @@
         <div v-else class="text-center">Loading...</div>
       </div>
       <review />
-      <contact />
+      <notification />
       <my-footer />
     </body>
   </div>
@@ -21,7 +21,7 @@ import MyMenu from "./components/MyMenu.vue";
 import MyHeader from "./components/MyHeader.vue";
 import Home from "./components/Home.vue";
 import Review from "./components/Review.vue";
-import Contact from "./components/Contact.vue";
+import Notification from "./components/Notification.vue";
 import MyFooter from "./components/MyFooter.vue";
 
 import axios from "axios";
@@ -33,7 +33,7 @@ export default {
     MyHeader,
     Home,
     Review,
-    Contact,
+    Notification,
     MyFooter,
   },
   data() {
