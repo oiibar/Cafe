@@ -1,8 +1,8 @@
 <template>
-  <div
-    class="bg-red-200 flex flex-col p-4 items-center text-center justify-center"
-  >
-    What our customers say
+  <div class="bg-red-200">
+    <div class="px-20 py-6 text-center flex items-center justify-center">
+      What our customers say
+    </div>
   </div>
 </template>
 

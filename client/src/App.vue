@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-orange-100">
+  <div>
     <my-header />
     <body>
       <home />
       <div>
-        <coffee-list :menu="menu" v-if="!isLoading" />
-        <div v-else>Loading...</div>
+        <my-menu :menu="menu" v-if="!isLoading" />
+        <div v-else class="text-center">Loading...</div>
       </div>
       <review />
       <contact />
@@ -16,7 +16,7 @@
 
 <script>
 import CoffeeCard from "./components/CoffeeCard.vue";
-import CoffeeList from "./components/CoffeeList.vue";
+import MyMenu from "./components/MyMenu.vue";
 
 import MyHeader from "./components/MyHeader.vue";
 import Home from "./components/Home.vue";
@@ -29,7 +29,7 @@ import axios from "axios";
 export default {
   components: {
     CoffeeCard,
-    CoffeeList,
+    MyMenu,
     MyHeader,
     Home,
     Review,

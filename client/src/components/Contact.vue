@@ -1,8 +1,12 @@
 <template>
-  <div
-    class="bg-yellow-200 flex flex-col p-4 items-center text-center justify-center"
-  >
-    Contact us
+  <div class="bg-yellow-200">
+    <div class="px-20 py-6 flex items-center text-center justify-between">
+      <h2>Stay up to date</h2>
+      <form>
+        <input type="text" />
+        <button>Submit</button>
+      </form>
+    </div>
   </div>
 </template>
 
