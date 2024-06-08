@@ -1,16 +1,22 @@
 <template>
-  <div
-    class="flex py-6 px-20 text-white bg-amber-950 items-center justify-center"
-  >
-    <div class="flex flex-col gap-4">
+  <div class="flex px-20 py-10 text-white bg-home items-center justify-between">
+    <div class="flex flex-col w-1/2 gap-4">
       <h1 class="font-bold text-5xl">Discover the perfect coffee</h1>
-      <p class="">
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ad
         dolorem maiores esse libero quia!
       </p>
       <div class="flex gap-2">
-        <button class="bg-blue-500 text-white p-2">Order Now -></button>
-        <button class="bg-blue-500 text-white p-2">Explore More</button>
+        <button
+          class="bg-transparent hover:bg-white border hover:text-home p-2"
+        >
+          Order Now ->
+        </button>
+        <button
+          class="bg-transparent hover:bg-white border hover:text-home p-2"
+        >
+          Explore More
+        </button>
       </div>
       <div class="flex items-center text-center gap-2 mt-10">
         <div class="flex flex-col items-center justify-center">
@@ -27,9 +33,7 @@
         </div>
       </div>
     </div>
-    <div>
-      <img :src="pic" alt="" />
-    </div>
+    <div><img :src="pic" alt="Logo" class="w-96" /></div>
   </div>
 </template>
 
