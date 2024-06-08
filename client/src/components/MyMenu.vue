@@ -1,5 +1,11 @@
 <template>
-  <div class="bg-orange-200 py-6 px-20">
+  <div class="bg-orange-200 py-6 px-20 text-center gap-4">
+    <h1 class="text-4xl font-bold">Best Selling Items</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima
+      molestias sed atque accusamus commodi, ipsa eaque velit voluptatibus.
+      Accusantium.
+    </p>
     <div
       class="text-center flex items-center justify-center flex-wrap"
       v-if="menu.length > 0"
