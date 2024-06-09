@@ -8,9 +8,16 @@
       </p>
       <div class="flex gap-2">
         <button
-          class="bg-transparent hover:bg-white border hover:text-home p-2"
+          class="bg-transparent hover:bg-white border flex items-center hover:text-home p-2"
+          @mouseover="isHovering = true"
+          @mouseleave="isHovering = false"
         >
-          Order Now ->
+          Order Now
+          <img
+            :src="isHovering ? right : right_white"
+            class="w-6 transition-colors duration-300"
+            alt="->"
+          />
         </button>
         <button
           class="bg-transparent hover:bg-white border hover:text-home p-2"
@@ -39,10 +46,15 @@
 
 <script>
 import pic from "../assets/pic.png";
+import right_white from "../assets/right_white.svg";
+import right from "../assets/right.svg";
 export default {
   data() {
     return {
       pic,
+      right_white,
+      right,
+      isHovering: false,
     };
   },
 };
