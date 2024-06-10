@@ -1,5 +1,6 @@
 <template>
   <div
+    id="menu"
     class="bg-menu py-20 px-20 text-center flex flex-col justify-center items-center gap-16"
   >
     <div class="w-1/2 flex flex-col gap-4">

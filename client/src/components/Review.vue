@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-review">
+  <div id="review" class="bg-review">
     <div
       class="px-20 py-16 font-bold text-center flex flex-col gap-16 items-center justify-center"
     >

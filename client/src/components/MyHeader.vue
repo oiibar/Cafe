@@ -3,14 +3,19 @@
     <div
       class="flex justify-between items-center text-center border-white border-2 p-4"
     >
-      <div class="flex items-center text-center justify-center gap-2">
+      <a
+        class="flex items-center text-center cursor-pointer justify-center gap-2"
+        href="#home"
+      >
         <p class="text-2xl font-bold">Caffein</p>
         <img :src="logo" alt="Logo" class="w-10" />
-      </div>
-      <nav class="flex gap-2">
-        <div>Home</div>
-        <div>Menu</div>
-        <div>Contact</div>
+      </a>
+      <nav class="flex gap-2 text-white/60 cursor-pointer">
+        <div><a href="#home" class="link">Home</a></div>
+        <div><a href="#menu" class="link">Menu</a></div>
+        <div><a href="#review" class="link">Reviews</a></div>
+        <div><a href="#news" class="link">News</a></div>
+        <div><a href="#contact" class="link">Contact</a></div>
       </nav>
     </div>
   </header>

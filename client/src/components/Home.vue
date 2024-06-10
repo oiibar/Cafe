@@ -1,5 +1,8 @@
 <template>
-  <div class="flex px-20 py-10 text-white bg-home items-center justify-between">
+  <div
+    id="home"
+    class="flex px-20 py-10 text-white bg-home items-center justify-between"
+  >
     <div class="flex flex-col w-1/2 gap-4">
       <h1 class="font-bold text-5xl">Discover the perfect coffee</h1>
       <p>

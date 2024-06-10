@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-menu">
+  <div id="news" class="bg-menu">
     <div class="px-20 py-16 flex items-center text-center justify-between">
       <h2 class="text-5xl font-extrabold w-96">Stay up to date on all news</h2>
       <div class="flex">
