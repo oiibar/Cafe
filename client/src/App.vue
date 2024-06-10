@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="!isLoading">
     <my-header />
     <body>
       <home />
@@ -11,6 +11,13 @@
       <notification />
       <my-footer />
     </body>
+  </div>
+  <div v-else>
+    <h2
+      class="flex flex-col items-center text-center text-4xl font-bold text-[#000] justify-center"
+    >
+      Loading...
+    </h2>
   </div>
 </template>
 

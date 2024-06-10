@@ -5,7 +5,7 @@
     >
       <h1 class="font-extrabold text-5xl">What our customers say</h1>
       <div class="flex items-center justify-center text-center gap-6">
-        <div class="bg-menu p-2 cursor-pointer">
+        <div class="bg-menu p-2 cursor-pointer hover:bg-menu/60">
           <img :src="left" alt="<-" class="w-10" />
         </div>
         <div class="bg-home w-full p-10 flex flex-col gap-6 text-white text-md">

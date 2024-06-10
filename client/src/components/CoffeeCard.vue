@@ -1,14 +1,15 @@
 <template>
   <div
-    class="flex flex-col text-center items-center justify-center border-2 border-black"
+    class="flex flex-col text-center items-center justify-center border-2 border-black w-1/3 flex-wrap"
   >
-    <div>
+    <div class="p-4 flex flex-col justify-center items-center">
       <img :src="item.image_url" class="w-60" alt="Coffee Image" />
-      <p>{{ item.name }}</p>
-      <p>{{ item.price }}</p>
-      <p>{{ item.region }}</p>
+      <p class="text-3xl font-bold">{{ item.name }}</p>
+      <p class="text-md">{{ item.price }}$</p>
     </div>
-    <button class="bg-btn w-60 p-4">Order Now</button>
+    <button class="bg-btn w-full p-4 border-t-2 font-bold text-xl">
+      Order Now
+    </button>
   </div>
 </template>
 
