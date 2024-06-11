@@ -8,7 +8,9 @@
       <p class="text-md">{{ item.price }}$</p>
     </div>
     <button class="bg-btn w-full p-4 border-t-2 font-bold text-xl">
-      Order Now
+      <router-link :to="`/info/${item.id}`" class="text-blue-500 underline">
+        View Details
+      </router-link>
     </button>
   </div>
 </template>
