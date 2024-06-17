@@ -5,16 +5,51 @@
     class="bg-menu py-20 px-6 sm:px-20 text-center flex flex-col justify-center items-center gap-16"
   >
     <div v-if="menu.length > 0" class="w-full max-w-2xl flex flex-col gap-4">
-      <h1 class="text-5xl font-extrabold">All Menu Items</h1>
-      <p class="text-sm text-gray-600">
-        Browse our complete selection of coffee.
-      </p>
+      <h1 class="text-5xl font-extrabold">Cart</h1>
+      <p class="text-sm text-gray-600">Finalize your order here</p>
     </div>
     <div
-      class="text-center flex items-center justify-center gap-6 flex-wrap"
+      class="text-center flex items-center gap-6 flex-wrap"
       v-if="menu.length > 0"
     >
-      <coffee-card v-for="item in menu" :item="item" :key="item.id" />
+      <div class="border w-full p-6">
+        <div
+          v-for="item in menu"
+          class="flex items-center gap-10 justify-between text-center"
+        >
+          <img :src="item.image_url" :key="item.id" class="w-60" alt="" />
+          <div>
+            <p>{{ item.name }}</p>
+            <p>{{ item.weight }}g</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              class="border rounded-full p-2 w-6 h-6 flex items-center justify-center"
+            >
+              -
+            </button>
+            <p>0</p>
+            <button
+              class="border rounded-full p-2 w-6 h-6 flex items-center justify-center"
+            >
+              +
+            </button>
+          </div>
+          <div>
+            <p>{{ item.price }}$</p>
+            <button class="border p-1">Remove</button>
+          </div>
+        </div>
+        <hr class="py-2" />
+        <div class="flex flex-col gap-2">
+          <p class="text-3xl font-extrabold">Total: <span>87$</span></p>
+          <button
+            class="border font-bold rounded-md text-3xl w-fit mx-auto px-4 py-2 hover:bg-white hover:text-[#000] transition-colors ease-in-out duration-100"
+          >
+            Checkout
+          </button>
+        </div>
+      </div>
     </div>
     <div
       v-else
@@ -45,8 +80,8 @@
 </template>
 
 <script>
-import OrderHeader from "@/components/OrderHeader.vue";
 import CoffeeCard from "@/components/CoffeeCard.vue";
+import OrderHeader from "@/components/OrderHeader.vue";
 import axios from "axios";
 
 export default {

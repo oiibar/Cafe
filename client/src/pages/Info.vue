@@ -46,11 +46,11 @@
       <h1 class="text-5xl font-extrabold">{{ coffee.name }}</h1>
       <div class="flex justify-between items-center">
         <img :src="coffee.image_url" alt="Coffee Image" class="w-96" />
-        <div class="flex flex-col gap-2 border-4 p-4">
+        <div class="flex flex-col gap-1 border-4 p-4">
           <p class="text-md">{{ coffee.description }}</p>
           <p class="text-3xl font-bold">{{ coffee.price }}$</p>
-          <p class="text-xl font-bold">{{ coffee.region }}</p>
-          <p class="text-xl font-bold">{{ coffee.weight }}g</p>
+          <p class="text-md font-bold">{{ coffee.region }}</p>
+          <p class="text-md font-bold">{{ coffee.weight }}g</p>
           <div class="flex items-center justify-center gap-1">
             <p class="text-xl font-bold">Roast Level:</p>
             <div class="flex items-center ml-2">
